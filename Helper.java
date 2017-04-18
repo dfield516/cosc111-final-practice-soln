@@ -5,6 +5,9 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
+
+import java.util.Random;
+
 public class Helper
 {
 	/*
@@ -93,7 +96,8 @@ public class Helper
      */
     public static int generateRandom(int min, int max)
     {
-    	return 0;
+    	Random rand = new Random();
+    	return rand.nextInt(max-min+1) + min;
     }
     
     /*
@@ -104,7 +108,10 @@ public class Helper
      */
     public static int[] createArrayWithConsecutiveNumbers(int start, int end)
     {
-    	return null;
+    	int[] values = new int[end - start + 1];
+    	for (int i=0; i<values.length; i++)
+    		values[i] = start + i;
+    	return values;
     }
     
     /*
@@ -113,6 +120,7 @@ public class Helper
      */
     public static Gadget newGadgetSerial(Gadget ref)
     {
-    	return null;
+    	Gadget newGadget = new Gadget(ref.partNumber, ref.serialNumber+1);
+    	return newGadget;
     }
 }

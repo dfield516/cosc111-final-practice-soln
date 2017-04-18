@@ -120,9 +120,11 @@ public class FinalPracticeUnitTests
     	i2 = Helper.generateRandom(25, 100);
     	assertTrue(i2 >= 25 && i2 <= 100);
     	int i3 = Helper.generateRandom(-10, 30);
-    	assertTrue(i3 >= 10 && i3 <= 30);
+    	assertTrue(i3 >= -10 && i3 <= 30);
     	i3 = Helper.generateRandom(-10, 30);
-    	assertTrue(i3 >= 10 && i3 <= 30);
+    	assertTrue(i3 >= -10 && i3 <= 30);
+    	int i4 = Helper.generateRandom(1, 1);
+    	assertTrue(i4 >= 1 && i4 <= 1);
     }
     
     /*
@@ -142,8 +144,8 @@ public class FinalPracticeUnitTests
     		assertEquals(-5+i, data2[i]);
     	int[] data3 = Helper.createArrayWithConsecutiveNumbers(10, 20);
     	assertEquals(11, data3.length);
-    	for (int i=0; i<data2.length; i++)
-    		assertEquals(10+i, data2[i]);
+    	for (int i=0; i<data3.length; i++)
+    		assertEquals(10+i, data3[i]);
     }
     
     /* Create a new gadget with the same part number but the 

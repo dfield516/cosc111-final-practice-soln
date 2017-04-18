@@ -10,7 +10,9 @@ public class Car
 	
 	Car(String name, double price)
 	{
-		
+		this.name = name;
+		this.price = price;
+		monthly_payment = price/60.0;
 	}
 	
 	// Getter and setters (auto-generated)
