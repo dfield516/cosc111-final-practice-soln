@@ -22,7 +22,11 @@ public class Helper
      */
     public static String isFreezing(double temperature_in_fahrenheit)
     {
-    	return "";
+    	if (temperature_in_fahrenheit < 32)
+    		return "below freezing";
+    	if (temperature_in_fahrenheit == 32)
+    		return "at freezing";
+    	return "above freezing";
     }
     
     /*
@@ -33,6 +37,7 @@ public class Helper
     	// Start with 2
     	int i = 2;
     	
+    	// Keep looping
     	while (true)
     	{
     		// Check if the remainider is 0
