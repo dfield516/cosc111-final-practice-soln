@@ -12,7 +12,7 @@ public class Helper
 	 */
     public static double FahrenheitToCelsius(double fahrenheit)
     {
-        return 0;
+        return (fahrenheit-32)*5.0/9.0;
     }
     
     /*
