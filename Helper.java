@@ -54,7 +54,16 @@ public class Helper
      */
     public static double FindRange(double[] values)
     {
-    	return 0;
+    	double min = Double.MAX_VALUE;
+    	double max = Double.MIN_VALUE;
+    	for (int i=0; i<values.length; i++)
+    	{
+    		if (min > values[i])
+    			min = values[i];
+    		if (max < values[i])
+    			max = values[i];
+    	}
+    	return max-min;
     }
     
     /*
