@@ -1,2 +1,2 @@
-# cosc111-final-practice-soln
-Solution for the final practice questions
+# cosc111-final-practice
+Practice questions for the final
