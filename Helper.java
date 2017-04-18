@@ -84,7 +84,7 @@ public class Helper
      */
     public static int SumofSumFrom0(int n1, int n2, int n3)
     {
-    	return 0;
+    	return SumFrom0(n1) + SumFrom0(n2) + SumFrom0(n3);
     }
     
     /*
