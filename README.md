@@ -1,4 +1,4 @@
-# cosc111 Final Practice Solutions
+# COSC 111 Final Practice Solutions
 
 Practice questions for the final
 
